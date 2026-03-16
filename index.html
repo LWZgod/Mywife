@@ -45,21 +45,37 @@ tr:nth-child(even) {
 <br>
 <br>
 <form>
+<h2 style="text-align:left; text-decoration:underline;">User Registeration</h2>
 <label for="fname">First Name:</label><br>
-<input type="text" id="fname" name="fname" size="50"><br>
+<input type="text" id="fname" name="fname" size="50" required><br>
 <label for="lname">Last Name:</label><br>
-<input type="text" id="lname" name="lname"><br>
+<input type="text" id="lname" name="lname" required><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br>
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="pwd" required><br>
+<label for="pic">Find your profile picture</label><br>
+<input type="search" id="pic" name="pic" required><br>
+<label for="file">Choose your profile picture:</label>
+<input type="file" id="file" name="file" required><br>
+<label for="pnumber">Please enter your phone number:</label>
+<input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="012-345-6789" required><br>
+<label for="url">Enter an url link:</label>
+<input type="url" id="url" name="url" required><br>
+<input type="image" src="submit.png" alt="Submit" width="48" height="48">
 
-<form action="/action_page.php">
 <p> Vote for your best wife </p>
 <input type="radio" id="Rem" name="BestWife" value="Rem">
 <label for="Rem">Rem</label><br>
 <input type="radio" id="MakiseKurisu" name="BestWife" value="MakiseKurisu">
 <label for="MakiseKurisu">Makise Kurisu</label><br>
 <input type="radio" id="Onodera" name="BestWife" value="Onodera">
-<label for="Onodera">Onodera</label><br>
+<label for="Onodera">Onodera</label><br><br>
 
-<p> Why do you choose her</p>
+<label for="Birthday">Your Wife's Birthday</label>
+<input type="date" id="Birthday" name="Birthday" min="2000-01-01" max="2026-03-16"><br><br>
+
+<label for="reason">Why do you choose her</label><br>
 <input type="checkbox" id="beautiful" name"reason" value="beautiful">
 <label for="beautiful">She's BEAUTIFUL</label><br>
 <input type="checkbox" id="kind" name"reason" value="kind">
@@ -67,6 +83,10 @@ tr:nth-child(even) {
 <input type="checkbox" id="rich" name"reason" value="rich">
 <label for="rich">She's RICH</label><br>
 <br>
+
+<label for="favcolor">Choose your favourite colour:</label>
+<input type="color" id="favcolor" name="favcolor"><br><br>
+
 <label for="Alphabet">Please give the alphabet</label><br>
 <select id="Alphabet" name="Alphabet">
   <option value="A">A</option>
@@ -77,10 +97,6 @@ tr:nth-child(even) {
 </select>
 <br>
 <br>
-
-<label for="love">How much you love your wife</label><br>
-0<input type="range" id="love" name="love" value="0">100
-<br><br>
 
 <label for="Age">Your wife's age</label><br>
 <input list="Age">
@@ -94,11 +110,16 @@ tr:nth-child(even) {
 <br>
 <br>
 
+<label for="love">How much you love your wife</label><br>
+0<input type="range" id="love" name="love" value="0" min="0" max="100">100
+<br><br>
+
 <label for="message">Any words want to say to your wife</label><br>
 <textarea name="message" row="10" cols="30">
 </textarea>
 <br>
-<input type="submit" value="Submit"><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset"><br>
 <button type="button" onclick="alert('WenZe is the Most Handsome!')">Click Me!</button>
 
 </form>
