@@ -1,20 +1,102 @@
 <!DOCTYPE html>
 <html>
+<style>
+table, th, td{
+border: 1px solid black;
+border-collapse: collapse;
+text-align: center;
+padding:20px;
+background-color:tomato;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
 <head>
     <title>LEE WEN ZE MAIN PAGE</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-
 <body>
-    <h1>LEE WEN ZE'S WIFE</h1>
-    <h2>Name: KITAGAWA</h2>
-    <p>Age: 17</p>
-    <p>Gender: Female</p>
-    
-    <img src="favicon.png" alt="W3Schools.com" width="1600" height="800">
+<table style= "width:100%">
+<caption>My Wife</caption>
+  <tr>
+    <th>Rank</th>
+    <th>Name</th>
+    <th>From</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Rem</td>
+    <td>Rezero</td>
+  </tr>
+<tr>
+    <td>2</td>
+    <td>Makise Kurisu</td>
+    <td>Steins Gate</td>
+  </tr>
+<tr>
+    <td>3</td>
+    <td>小野寺小咲</td>
+    <td>伪恋</td>
+  </tr>
+</table>
 
 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">See my Next Wife</a>
+<br>
+<br>
+<form>
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname" name="fname" size="50"><br>
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname"><br>
+
+<form action="/action_page.php">
+<p> Vote for your best wife </p>
+<input type="radio" id="Rem" name="BestWife" value="Rem">
+<label for="Rem">Rem</label><br>
+<input type="radio" id="MakiseKurisu" name="BestWife" value="MakiseKurisu">
+<label for="MakiseKurisu">Makise Kurisu</label><br>
+<input type="radio" id="Onodera" name="BestWife" value="Onodera">
+<label for="Onodera">Onodera</label><br>
+
+<p> Why do you choose her</p>
+<input type="checkbox" id="beautiful" name"reason" value="beautiful">
+<label for="beautiful">She's BEAUTIFUL</label><br>
+<input type="checkbox" id="kind" name"reason" value="kind">
+<label for="kind">She's KIND</label><br>
+<input type="checkbox" id="rich" name"reason" value="rich">
+<label for="rich">She's RICH</label><br>
+<br>
+<label for="Alphabet">Please give the alphabet</label><br>
+<select id="Alphabet" name="Alphabet">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+  <option value="E" selected>E</option>
+</select>
+<br>
+<br>
+
+<label for="Age">Your wife's age</label><br>
+<input list="Age">
+<datalist id="Age">
+  <Option value="1">
+  <Option value="5">
+  <Option value="10">
+  <Option value="15">
+  <Option value="20">
+</datalist>
+<br>
+<br>
+
+<label for="message">Any words want to say to your wife</label><br>
+<textarea name="message" row="10" cols="30">
+</textarea>
+<br>
+<input type="submit" value="Submit"><br>
+<button type="button" onclick="alert('WenZe is the Most Handsome!')">Click Me!</button>
+
+</form>
 </body>
-
 </html>
-
